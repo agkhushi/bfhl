@@ -127,6 +127,3 @@ After deployment, you'll have:
 - [Node.js on Vercel](https://vercel.com/docs/runtimes#official-runtimes/node-js)
 - [Vercel CLI](https://vercel.com/docs/cli)
 
----
-
-**🎉 Your BFHL API will be automatically deployed and updated with every code push!**
