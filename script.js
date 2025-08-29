@@ -17,7 +17,7 @@ class BFHLAPITester {
       window.location.hostname === "localhost" ||
       window.location.hostname === "127.0.0.1"
     ) {
-      this.apiBaseUrl = "http://localhost:3000";
+      this.apiBaseUrl = "http://localhost:3001";
     } else {
       this.apiBaseUrl = window.location.origin;
     }

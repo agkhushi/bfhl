@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:3001";
 
 // Test data from the question paper examples
 const testCases = [
