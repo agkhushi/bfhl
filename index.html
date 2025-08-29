@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFHL API Tester - VIT Full Stack</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <div class="header-content">
+          <h1><i class="fas fa-code"></i> BFHL API Tester</h1>
+          <p>VIT Full Stack Question Paper - REST API Testing Interface</p>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <!-- API Status -->
+        <div class="status-card">
+          <div class="status-header">
+            <h3><i class="fas fa-server"></i> API Status</h3>
+            <div class="status-indicator" id="statusIndicator">
+              <span class="status-dot"></span>
+              <span class="status-text">Checking...</span>
+            </div>
+          </div>
+          <div class="status-details" id="statusDetails">
+            <p>Checking API connectivity...</p>
+          </div>
+        </div>
+
+        <!-- Input Section -->
+        <div class="input-section">
+          <h3><i class="fas fa-edit"></i> Test Your Data</h3>
+          <div class="input-container">
+            <label for="dataInput">Enter your data array (JSON format):</label>
+            <textarea
+              id="dataInput"
+              placeholder='["a", "1", "334", "4", "R", "$"]'
+              rows="4"
+            ></textarea>
+
+            <!-- Quick Test Buttons -->
+            <div class="quick-tests">
+              <h4>Quick Test Examples:</h4>
+              <div class="test-buttons">
+                <button class="test-btn" data-example="example-a">
+                  Example A
+                </button>
+                <button class="test-btn" data-example="example-b">
+                  Example B
+                </button>
+                <button class="test-btn" data-example="example-c">
+                  Example C
+                </button>
+              </div>
+            </div>
+
+            <button class="submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Test API
+            </button>
+          </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section" id="resultsSection" style="display: none">
+          <h3><i class="fas fa-chart-bar"></i> API Response</h3>
+          <div class="results-container">
+            <div class="response-status">
+              <span class="status-badge" id="responseStatus">Success</span>
+              <span class="status-code" id="statusCode">200</span>
+            </div>
+
+            <div class="response-data">
+              <div class="data-grid">
+                <div class="data-item">
+                  <h4><i class="fas fa-user"></i> User Info</h4>
+                  <div class="data-content">
+                    <p><strong>User ID:</strong> <span id="userId">-</span></p>
+                    <p><strong>Email:</strong> <span id="userEmail">-</span></p>
+                    <p>
+                      <strong>Roll Number:</strong>
+                      <span id="rollNumber">-</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="data-item">
+                  <h4><i class="fas fa-sort-numeric-up"></i> Numbers</h4>
+                  <div class="data-content">
+                    <p>
+                      <strong>Even Numbers:</strong>
+                      <span id="evenNumbers">-</span>
+                    </p>
+                    <p>
+                      <strong>Odd Numbers:</strong>
+                      <span id="oddNumbers">-</span>
+                    </p>
+                    <p><strong>Sum:</strong> <span id="sum">-</span></p>
+                  </div>
+                </div>
+
+                <div class="data-item">
+                  <h4><i class="fas fa-font"></i> Text Data</h4>
+                  <div class="data-content">
+                    <p>
+                      <strong>Alphabets:</strong> <span id="alphabets">-</span>
+                    </p>
+                    <p>
+                      <strong>Special Characters:</strong>
+                      <span id="specialChars">-</span>
+                    </p>
+                    <p>
+                      <strong>Concatenated String:</strong>
+                      <span id="concatString">-</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="raw-response">
+                <h4><i class="fas fa-code"></i> Raw Response</h4>
+                <pre id="rawResponse">No response yet</pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Error Section -->
+        <div class="error-section" id="errorSection" style="display: none">
+          <h3><i class="fas fa-exclamation-triangle"></i> Error</h3>
+          <div class="error-content">
+            <p id="errorMessage">An error occurred</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy; 2024 BFHL API</p>
+          <p></p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
