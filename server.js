@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const helmet = require("helmet");
+const path = require("path");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -9,6 +10,9 @@ const PORT = process.env.PORT || 3001;
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
+
+// Serve static files from dist folder
+app.use(express.static(path.join(__dirname, "dist")));
 
 // Utility functions
 function isNumber(str) {
@@ -91,6 +95,7 @@ app.get("/", (req, res) => {
   });
 });
 
+// API routes
 app.post("/bfhl", (req, res) => {
   try {
     const { data } = req.body;
@@ -128,12 +133,9 @@ app.get("/health", (req, res) => {
   });
 });
 
-// 404 handler
-app.use("*", (req, res) => {
-  res.status(404).json({
-    is_success: false,
-    error: "Route not found",
-  });
+// Serve frontend for all other routes
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 // Error handling middleware
