@@ -114,7 +114,7 @@ Before submitting:
 
 ## 🔗 Integration with Your API
 
-Your frontend will automatically:
+The frontend will automatically:
 
 - **Detect localhost** → Use `http://localhost:3001` for API
 - **Detect production** → Use current domain for API
@@ -130,6 +130,5 @@ Your frontend will automatically:
 4. **Use the same domain** if possible to avoid CORS issues
 5. **Test all examples** to ensure full functionality
 
----
 
-**Your frontend is now ready for the VIT Full Stack Question Paper! 🎓✨**
+
