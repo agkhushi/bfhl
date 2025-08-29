@@ -1,6 +1,6 @@
 # BFHL API - VIT Full Stack 
 
-A complete REST API solution with a beautiful frontend interface for VIT's Full Stack Question Paper.
+A complete REST API solution with a beautiful frontend interface 
 
 ## 🎯 Project Overview
 
@@ -203,6 +203,7 @@ All successful responses include:
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
+
 
 
 
