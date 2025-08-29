@@ -72,35 +72,7 @@ curl -X POST https://your-api-url.vercel.app/bfhl \
   -d '{"data": ["A","ABcD","DOE"]}'
 ```
 
-## 📝 Submission Checklist
 
-Before submitting to the form:
 
-- [ ] API is deployed and accessible
-- [ ] `/bfhl` endpoint works correctly
-- [ ] All examples return expected results
-- [ ] Numbers are returned as strings
-- [ ] HTTP 200 status for success
-- [ ] Error handling works properly
 
-## 🔗 Form Submission
 
-Submit your API endpoint at:
-**https://forms.office.com/r/ZeVpUYp3zV**
-
-Make sure to include the full URL with `/bfhl` route!
-
-## 🎯 Success Criteria
-
-Your submission will be successful if:
-
-- API responds correctly to all test cases
-- Numbers are returned as strings
-- User ID format is correct
-- HTTP status codes are proper
-- Error handling is graceful
-- API is publicly accessible
-
----
-
-**Good luck with your VIT Full Stack Question Paper submission! 🎓✨**
