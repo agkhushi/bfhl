@@ -4,17 +4,9 @@
     {
       "src": "server.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "dist/**",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/server.js"
-    },
     {
       "src": "/bfhl",
       "dest": "/server.js"
@@ -24,8 +16,16 @@
       "dest": "/server.js"
     },
     {
+      "src": "/styles.css",
+      "dest": "/dist/styles.css"
+    },
+    {
+      "src": "/script.js",
+      "dest": "/dist/script.js"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/dist/index.html"
+      "dest": "/server.js"
     }
   ],
   "env": {

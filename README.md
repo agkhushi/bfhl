@@ -204,7 +204,33 @@ All successful responses include:
 4. Test thoroughly
 5. Submit a pull request
 
+## 📄 License
 
+MIT License - feel free to use this project for your VIT Full Stack Question Paper submission.
 
+## 🆘 Support
 
+If you encounter any issues:
 
+1. Check the error logs
+2. Verify your input format
+3. Ensure all dependencies are installed
+4. Check the health endpoint
+5. Verify frontend and backend are both running
+
+---
+
+**Good luck with your VIT Full Stack Question Paper submission! 🎓✨**
+
+## 🎯 Success Criteria
+
+Your submission will be successful if:
+
+- ✅ API responds correctly to all test cases
+- ✅ Numbers are returned as strings
+- ✅ User ID format is correct
+- ✅ HTTP status codes are proper
+- ✅ Error handling is graceful
+- ✅ API is publicly accessible
+- ✅ Frontend works perfectly for testing
+- ✅ All examples from question paper work correctly

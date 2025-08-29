@@ -87,12 +87,7 @@ function processData(data) {
 
 // Routes
 app.get("/", (req, res) => {
-  res.json({
-    message: "BFHL API is running!",
-    endpoint: "/bfhl",
-    method: "POST",
-    description: "Send a POST request with data array to /bfhl",
-  });
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 // API routes
@@ -133,7 +128,7 @@ app.get("/health", (req, res) => {
   });
 });
 
-// Serve frontend for all other routes
+// Catch-all route - serve frontend for any other route
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
